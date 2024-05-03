@@ -1,0 +1,7 @@
+<div *ngFor ="let inventory of inventories">
+    <h1>{{inventory.title}}</h1>
+    <img [src]="inventory.picture" alt="photo">
+    <span> Price: {{inventory.price}} </span>
+    <button (click)="addToCart(inventory)">Add to cart</button>
+</div>
+
